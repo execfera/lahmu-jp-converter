@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Lahmu Translator</title>
+    <script src="main.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        margin: 2em auto;
+      }
+
+      textarea, button {
+        margin: 1em;
+      }
+
+      textarea {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Lahmu text</h4>
+    <textarea placeholder="Lahmu text" id="lahmu" cols="30" rows="10"></textarea>
+    <button id="lahmu2jp">Translate to Japanese</button>
+    <h4>Japanese text</h4>
+    <textarea placeholder="Japanese text" id="japanese" cols="30" rows="10"></textarea>
+    <button id="jp2lahmu">Translate to Lahmu</button>
+    <div>Sample Lahmu text from canon:</div>
+    <pre>
+      ...s@4r;f@eeyw@ruit@s@k94i4b@ewe?
+      ! uyq@b4e3bst&lt;u.-s@&lt;-@s!
+      utj utj w@fue...? 6d5w 6d5w uit@ e7uk
+      ! 4b@eq< 4b@eq!
+      ----b;f? b;m 6ud@ MONO? 6md
+      qkde qkde! g@'fffffffffffffffffffffffffffffffff
+      ... tzs@4d(4l)4 ... ...
+      zg@kiy:@yq,qkd]! 0o4 0o4 0o4
+      3dtofd@/94, rd@~cb@3. fd;.t,nwnge.
+    </pre>
+    <div>Some notes:</div>
+    <ul>
+      <li>The capital-lettered "MONO?" part is probably just regular Japanese that wasn't converted to Lahmu.</li>
+      <li>Only hiragana is accepted, no kanji or katakana.</li>
+    </ul>
+  </body>
+
+</html>
